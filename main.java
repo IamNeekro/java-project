@@ -57,8 +57,10 @@ Thread.sleep(200);
 System.out.println("Continue? s/n");
 var continuar = scan.next();
 if(continuar.equals("s") || continuar.equals("S")){
+    scan.close();
     continue;
 }else{
+    scan.close();
     break;
 }
 }
